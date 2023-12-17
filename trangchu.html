@@ -1,0 +1,284 @@
+~<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang web thị trường cho các bài viết</title>
+    <!-- Liên kết Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Liên kết tệp CSS tùy chỉnh -->
+    <link rel="stylesheet" href="stlyle.css">
+     <!-- Liên kết jQuery -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <!-- Liên kết Bootstrap JS -->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <script>
+      $(document).ready(function () {
+          // Lấy dữ liệu từ sessionStorage
+          var courseTitle = sessionStorage.getItem("courseTitle");
+          var courseTeacher = sessionStorage.getItem("courseTeacher");
+          var courseDuration = sessionStorage.getItem("courseDuration");
+          var courseFee = sessionStorage.getItem("courseFee");
+          var courseDescription = sessionStorage.getItem("courseDescription");
+          // Hiển thị dữ liệu trên các nhãn
+          $("#course-title").text(courseTitle);
+          $("#course-teacher").text(courseTeacher);
+          $("#course-duration").text(courseDuration);
+          $("#course-fee").text(courseFee);
+          $("#course-description").text(courseDescription);
+      });
+      </script>
+</head>
+<body>
+    
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="./yweu.jpg" alt="Logo" width="100" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="trangchu.html">Trang chủ <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./yeucau.html">Yêu cầu</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+   
+    <!-- Thanh tìm kiếm -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2 w-75" type="search" placeholder="Tìm kiếm bài viết theo chủ đề, từ khóa, tác giả..." aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Danh sách các bài viết nổi bật -->
+    <!-- Danh sách các bài viết nổi bật -->
+<div class="container mt-4">
+  <div class="row">
+      <div class="col-md-12">
+          <h3 class="text-center">Các bài viết nổi bật</h3>
+          <div class="card-deck">
+              <div class="card">
+                  <img src="./nhà1.jpg" class="card-img-top" alt="Article 1">
+                  <div class="card-body">
+                      <h5 class="card-title">Bài viết 1</h5>
+                      <p class="card-text">Tôi cần tìm và mua một căn nhà gồm:<br> Có giấy chứng nhận quyền sở hữu đối với nhà ở theo quy định của pháp luật;
+                        Không có tranh chấp về quyền sở hữu;
+                        Không bị kê biên để thi hành án hoặc để chấp hành quyết định hành chính của cơ quan nhà nước có thẩm quyền.
+                        Bên bán nhà ở phải là chủ sở hữu nhà ở hoặc người đại diện theo quy định của pháp luật về dân sự và có năng lực hành vi dân sự.</p>
+                      <p class="card-text"><small class="text-muted">Tác giả: Nguyễn Văn A</small></p>
+                      <p class="card-text"><small class="text-muted">Giá: 100.000 VNĐ</small></p>
+                      <a href="#" class="btn btn-primary">Xem chi tiết</a>
+                  </div>
+              </div>
+              <div class="card">
+                  <img src="./ảnh chó.jpg" width="200px" height="200px" class="card-img-top" alt="Article 2">
+                  <div class="card-body">
+                      <h5 class="card-title">Bài viết 2</h5>
+                      <p class="card-text">Lucky bị lạc 2 tháng trước tại phố Ngô Gia Tự, Gia Lâm, Hà Nội. Lucky có lông màu nâu bạc, giống Poodle, nặng khoảng 5,5kg. Mũi bé có đặc điểm khác là màu nâu loang loang đen, răng hàm dưới khấp khểnh. Ai thấy bé xin liên lạc theo SĐT 0982828084. Tôi xin cảm ơn và hậu tạ.
+
+                        Tôi  tha thiết tìm em pug này. Tôi bị thất lạc em nó đến nay đã được 10 ngày . E nặng 10 kg và bị mất tại khu đô thị Đặng Xá, Gia Lâm, Hà Nội.
+                        
+                        Ai biết hoặc cưu mang em nó , xin cho tôi chuộc lại</p>
+                      <p class="card-text"><small class="text-muted">Tác giả: Trần Thị B</small></p>
+                      <p class="card-text"><small class="text-muted">Giá: 150.000 VNĐ</small></p>
+                      <a href="#" class="btn btn-primary">Xem chi tiết</a>
+                  </div>
+              </div>
+              <div class="card">
+                  <img src="./xe máy1.jpg" width="200px" height="200px"  class="card-img-top" alt="Article 3">
+                  <div class="card-body">
+                      <h5 class="card-title">Bài viết 3</h5>
+                      <p class="card-text">Tôi có 1 vài chiếc xe cần bán:<br>✅CHẤT LƯỢNG : Mọi chiếc xe tại cửa hàng đều đã được kiểm tra cẩn thận về chất lượng cũng như đảm bảo pháp lý của xe.
+                        <br>✅ DỊCH VỤ : Luôn hỗ trợ trước và sau mua bán, đặt uy tín lên đứng đầu. Bảo hành và sửa chữa miễn phí với hơn 10 địa điểm trong nội thành (trong thời gian bảo hành từ 3- 6- 12 tháng)
+                       <br> ✅ AN TOÀN : Giao xe tận nhà hoặc cứu hộ, xử lý sự cố 24/7 giúp khách hàng tiết kiệm tối đa thời gian và chi phí trong quá trình sử dụng.
+                        <br>✅ GIÁ RẺ : Đó là không tốn tiền sửa chữa, tiền xăng và tốn thời gian bảo hành.</p>
+                      <p class="card-text"><small class="text-muted">Tác giả: Lê Văn C</small></p>
+                      <p class="card-text"><small class="text-muted">Giá: 200.000 VNĐ</small></p>
+                      <a href="#" class="btn btn-primary">Xem chi tiết</a>
+                  </div>
+              </div>
+          </div>
+          <div class="card-deck mt-4">
+              <div class="card">
+                  <img src="./oto.jpg" class="card-img-top" alt="Article 4">
+                  <div class="card-body">
+                      <h5 class="card-title">Bài viết 4</h5>
+                      <p class="card-text">Cần tìm<br> xe Bentley Flying Spur First Edition sản xuất 2022.
+                        <br>- Xe nhập Mỹ, full option, màu đen nội thất nâu da bò.
+                        <br>- Xe sử dụng động cơ V8 4.0L công suất 542 mã lực, cực kỳ ấn tượng với hiệu suất.
+                        <br>- Đi kèm là vô vàn công nghệ và tiện nghi hiện đại như: Hắt kính, phanh khoảng cách, cảnh báo chệch làn, cảnh báo điểm mù, camera 360, ghế massage kèm theo sấy nóng lạnh, toàn bộ nội thất sử dụng da bò, trần da lộn, cửa sổ trời toàn cảnh, hộp lạnh, cốp điện có đá cốp, hệ thống đèn Led trong khoang nội thất, hệ thống đèn pha Led ma trận pha lê...
+                        <br>- Giá đảm bảo tốt nhất thị trường, bảo hành 3 năm và 30.000 km.
+                        </p>
+                      <p class="card-text"><small class="text-muted">Tác giả: Nguyễn Thị D</small></p>
+                      <p class="card-text"><small class="text-muted">Giá: 250.000 VNĐ</small></p>
+                      <a href="#" class="btn btn-primary">Xem chi tiết</a>
+                  </div>
+              </div>
+              <div class="card">
+                  <img src="./chó samoyed.jpg" class="card-img-top" alt="Article 5">
+                  <div class="card-body">
+                      <h5 class="card-title">Bài viết 5</h5>
+                      <p class="card-text">Chó Samoyed là loài chó săn đến từ vùng Siberia (Nga) có vẻ đẹp tựa “nàng bạch tuyết” bởi sở hữu bộ lông dài mượt trắng muốt, kiêu sa. Chúng thường cao khoảng 45 – 60cm, nặng tầm 16 – 30kg, tai tam giác với phần đỉnh hơi tù, luôn vểnh lên, đuôi cong cuộn tròn ở lưng, mắt hình hạnh nhân, rất đáng yêu, dễ gần và thông minh.
+                        <br>Giá tham khảo: 6.000.000 – 9.000.000 đồng/con
+                      </p>
+                      <p class="card-text"><small class="text-muted">Tác giả: Trần Văn E</small></p>
+                      <p class="card-text"><small class="text-muted">Giá: 300.000 VNĐ</small></p>
+                      <a href="#" class="btn btn-primary">Xem chi tiết</a>
+                  </div>
+              </div>
+              <div class="card">
+                  <img src="article6.jpg" class="card-img-top" alt="Article 6">
+                  <div class="card-body">
+                      <h5 class="card-title">Bài viết 6</h5>
+                      <p class="card-text">Đây là một bài viết mẫu về chủ đề 6. Nó có một đoạn văn ngắn để giới thiệu nội dung chính của bài viết.</p>
+                      <p class="card-text"><small class="text-muted">Tác giả: Lê Thị F</small></p>
+                      <p class="card-text"><small class="text-muted">Giá: 350.000 VNĐ</small></p>
+                      <a href="#" class="btn btn-primary">Xem chi tiết</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2 class="text-center">Bài viết do khách hàng yêu cầu</h2>
+  <div class="card mt-4">
+      <div class="card-body">
+          <h5 id="course-title" class="card-title"></h5>
+          <p id="course-teacher" class="card-text"></p>
+          <p id="course-duration" class="card-text"></p>
+          <p id="course-fee" class="card-text"></p>
+          <p id="course-description" class="card-text"></p>
+      </div>
+  </div>
+</div>
+      
+      
+      
+        <footer class="text-center text-lg-start bg-light text-muted">
+          <!-- Section: Social media -->
+          <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+              <span></span>
+            </div>
+            <!-- Left -->
+        
+            <!-- Right -->
+            <div>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <!-- Right -->
+          </section>
+          <!-- Section: Social media -->
+        
+          <!-- Section: Links  -->
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    <i class="fas fa-gem me-3"></i>Company name
+                  </h6>
+                  <p>
+                    Công ty cổ phần một thành viên VL<br>
+                    SĐT: 0326500038<br>
+                    Email: vietloi1205@gmail.com<br>
+                    Trụ sở: Yên xá- Tân triều- Thanh Trì<br>
+                    Chúng tôi có trách nhiệm chuyền tải cung cấp thông tin cho mọi người<br>
+                    <img src="./logofb.jpg" height="70" width="70">
+                    <img src="./logoem.jpg"  height="70" width="70" >
+                  </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Về chúng tôi
+                  </h6>
+                  <p>
+                    <a href="#!" class="text-reset">An toàn khi giao dịch</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Liên hệ</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Quy chế hoạt động</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Giới thiệu</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Kết nói người bán với người mua</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Điều khoản sử dụng</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Hỗ trợ
+                  </h6>
+                  <p>
+                    <a href="#!" class="text-reset">Báo giá quảng cáo</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Hỗ trợ đăng tin</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Câu hỏi thường gặp</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Cung cấp tin tức</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+        
+                
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </div>
+          </section>
+</body>
+</html>

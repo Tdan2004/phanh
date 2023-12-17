@@ -1,0 +1,127 @@
+@import url('');
+
+:root {
+  --blue:#1E90FF;
+}
+
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+  margin: 0 ; padding: 0;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all .2s cubic-bezier(.37, 1.14,.26,1.24);
+}
+
+*::selection{
+  background: var(--blue);
+  color: #fff;
+}
+
+html{
+  font-size: 92%;
+  /* overflow: hidden; */
+}
+/* Định dạng cho thẻ body */
+#navbarNav.collapse.navbar-collapse{
+  min-height: 5.67em;
+  padding: 12px 10px 12px 10px;
+  color: black;
+}
+.navbar-toggler-icon{
+  text-align: right;
+}
+.navbar .navbar-expand-lg .navbar-light .bg-light{
+  color: black;
+  font-weight: 200;
+}
+
+ul {
+  font-size: 1.37em;
+
+}
+ul li{
+margin: .29em;
+}
+ul li a{
+  text-align: left;
+  font-size: 1.02em;
+}
+
+body {
+    background-color: #f0f0f0;
+  }
+.row{
+  margin: 20px 0 ;
+  text-align: center;
+}
+.form-inline{
+  text-align: center;
+}
+.col-md-12{
+  text-align: center;
+}
+  /* Định dạng cho tiêu đề trang */
+  h3 {
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  /* Định dạng cho biểu mẫu đăng ký */
+  .registration-form {
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  /* Định dạng cho bảng trong biểu mẫu */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Định dạng cho các ô trong bảng */
+  td {
+    padding: 10px;
+    vertical-align: top;
+  }
+  
+  /* Định dạng cho các nhãn trong bảng */
+  label {
+    font-weight: bold;
+  }
+  
+  /* Định dạng cho các trường nhập liệu trong bảng */
+  input, select, textarea {
+    width: 100%;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+  }
+  
+  /* Định dạng cho nút gửi trong bảng */
+  .submit {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Định dạng cho chân trang */
+  footer {
+    margin-top: 20px;
+  }
+  
+
+
+
+
+ 
